@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Nexa Heavy';
+    src: url('../fonts/nexa/Nexa-Heavy-Italic.eot');
+    src: local('Nexa Heavy Italic'), local('Nexa-Heavy-Italic'),
+        url('../fonts/nexa/Nexa-Heavy-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/nexa/Nexa-Heavy-Italic.woff') format('woff'),
+        url('../fonts/nexa/Nexa-Heavy-Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+

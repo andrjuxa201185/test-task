@@ -36,6 +36,11 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest(path.build.fonts))
 });
 
+gulp.task('lib', function() {
+    return gulp.src(path.src.lib)
+    .pipe(gulp.dest(path.build.lib))
+});
+
 gulp.task("js-minify", function (){
     return gulp.src(path.src.js)
     // .pipe(jsMinify())
@@ -121,6 +126,7 @@ gulp.task('run', function(){
         'clean', 
         'html', 
         'fonts',
+        'lib',
         'reload-css',
         'images',
         'js-minify',
