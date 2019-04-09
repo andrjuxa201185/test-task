@@ -14,20 +14,27 @@ const reload = browserSync.reload;
 const path = {
     src: {
         js: "./app/script/**/*.js",
-        css: "./app/style/css.css",
+        css: ["./app/style/css.css", "./app/style/font-awesome.css"],
         lib: "./app/lib/**/*",
         html:"./app/html/*.html",
         scss: "./app/style/css.scss",
-        images: "./app/images/**/*"
+        images: "./app/images/**/*",
+        fonts: "./app/fonts/**/*"
     },
     build: {
         js: "./build/script/",
         css: "./build/style/",
         html: "./build/html/",
         lib: "./build/lib/",
-        images: "./build/images/"
+        images: "./build/images/",
+        fonts: "./build/fonts/"
     },
 };
+
+gulp.task('fonts', function() {
+    return gulp.src(path.src.fonts)
+    .pipe(gulp.dest(path.build.fonts))
+});
 
 gulp.task("js-minify", function (){
     return gulp.src(path.src.js)
@@ -113,6 +120,7 @@ gulp.task('run', function(){
     runSequence(
         'clean', 
         'html', 
+        'fonts',
         'reload-css',
         'images',
         'js-minify',
