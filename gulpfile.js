@@ -1,10 +1,10 @@
 const gulp = require("gulp");
-const jsMinify = require("gulp-uglify");
+// const jsMinify = require("gulp-uglify");
 const cssMinify = require("gulp-minify-css");
 const runSequence = require("run-sequence");
-const imagemin = require("gulp-imagemin");
+// const imagemin = require("gulp-imagemin");
 const clean = require("gulp-clean");
-const rigger = require("gulp-rigger");
+// const rigger = require("gulp-rigger");
 const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
 const watch = require("gulp-watch");
@@ -38,7 +38,7 @@ gulp.task("js-minify", function (){
 
 gulp.task("html", function () {
     gulp.src(path.src.html)
-    .pipe(rigger())
+    // .pipe(rigger())
     .pipe(gulp.dest(path.build.html))
     .pipe(reload({stream: true}));
 });
@@ -53,7 +53,7 @@ gulp.task('sass', function () {
 
 gulp.task("css-minify", function (){
     return gulp.src(path.src.css)
-    .pipe(cssMinify())
+    // .pipe(cssMinify())
     .pipe(gulp.dest(path.build.css))
     .pipe(reload({stream: true}));
 });
