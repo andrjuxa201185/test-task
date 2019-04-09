@@ -76,8 +76,21 @@ header {
           color: white; }
       header nav ul li.active {
         background-color: #1db1ae;
-        padding: 15px 20px;
+        padding: 10px 20px;
         border-radius: 25px;
         display: flex;
         justify-content: space-between;
         align-items: center; }
+        header nav ul li.active span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 7px;
+          background-color: #f35f52;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          color: white;
+          font-size: 11px; }
+  header .wrapper-header-center {
+    height: 100%; }
