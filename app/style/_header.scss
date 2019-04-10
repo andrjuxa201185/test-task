@@ -104,7 +104,17 @@ header {
                                    opacity: 1;
                                }
                            }
-                           label span {
+                           label {
+                            font-size: 12px;
+                            color: #8c8c8c;
+                            b{
+                                font-size: 16px;
+                                font-weight: bold;
+                                font-family: 'Open Sans', sans-serif;
+                                margin-right: 10px;
+                                color: #242424;
+                            }
+                            span {
                                display: flex;
                                align-items: center;
                                margin-right: 5px;
@@ -118,6 +128,7 @@ header {
                                     opacity: 0;
                                 }
                            }
+                        }
                        }
                    }
                    .wrapper-sbt {
@@ -130,15 +141,15 @@ header {
                             width: 100%;
                             height: 100%;
                             font-size: 14px;
-                            text-transform: uppercase;
-                            color: white;
+                            text-transform: uppercase;   
                             font-family: 'Nexa Heavy', sans-serif;
-                            background-color: $turquoise;
+                            background-color: transparent;
+                            color: $turquoise;
                             cursor: pointer;
                             transition: all .5s;
                             &:hover{
-                                background-color: transparent;
-                                color: $turquoise;
+                                background-color: $turquoise;
+                                color: white;
                             }
                             .fa{
                                 color: inherit;
