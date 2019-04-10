@@ -19,7 +19,8 @@ const path = {
         html:"./app/html/*.html",
         scss: "./app/style/css.scss",
         images: "./app/images/**/*",
-        fonts: "./app/fonts/**/*"
+        fonts: "./app/fonts/**/*",
+        data: "./app/data/**/*"
     },
     build: {
         js: "./build/script/",
@@ -27,13 +28,18 @@ const path = {
         html: "./build/html/",
         lib: "./build/lib/",
         images: "./build/images/",
-        fonts: "./build/fonts/"
+        fonts: "./build/fonts/",
+        data: "./build/data/"
     },
 };
 
 gulp.task('fonts', function() {
     return gulp.src(path.src.fonts)
     .pipe(gulp.dest(path.build.fonts))
+});
+gulp.task('data', function() {
+    return gulp.src(path.src.data)
+    .pipe(gulp.dest(path.build.data))
 });
 
 gulp.task('lib', function() {
@@ -125,6 +131,7 @@ gulp.task('run', function(){
     runSequence(
         'clean', 
         'html', 
+        'data',
         'fonts',
         'lib',
         'reload-css',

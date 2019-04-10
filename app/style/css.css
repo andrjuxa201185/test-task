@@ -55,7 +55,6 @@ a:hover {
 
 header {
   height: 100vh;
-  overflow: hidden;
   background-image: url("../images/header-bg.png");
   background-size: cover;
   background-position: center; }
@@ -94,7 +93,7 @@ header {
           color: white;
           font-size: 11px; }
   header .wrapper-header-center {
-    height: 100%; }
+    flex-grow: 1; }
     header .wrapper-header-center .header-center {
       height: 100%;
       color: white; }
@@ -111,14 +110,14 @@ header {
         padding: 15px;
         margin-top: 60px;
         background-color: rgba(38, 38, 38, 0.3); }
+        header .wrapper-header-center .header-center .search form .fa {
+          color: #3f3f3f;
+          font-size: 20px;
+          min-width: 20px; }
         header .wrapper-header-center .header-center .search form .location-date {
           width: 845px;
           border-radius: 3px;
           background-color: white; }
-          header .wrapper-header-center .header-center .search form .location-date .fa {
-            color: #3f3f3f;
-            font-size: 20px;
-            min-width: 20px; }
           header .wrapper-header-center .header-center .search form .location-date input {
             padding: 15px 5px;
             border: none;
@@ -127,14 +126,71 @@ header {
             outline: none; }
           header .wrapper-header-center .header-center .search form .location-date .location {
             border-right: solid 1px #dadada; }
+        header .wrapper-header-center .header-center .search form .checkroom-sbt {
+          margin-top: 10px; }
+          header .wrapper-header-center .header-center .search form .checkroom-sbt .checkroom {
+            padding: 0 15px;
+            flex-grow: 1;
+            border-radius: 3px;
+            background-color: white; }
+            header .wrapper-header-center .header-center .search form .checkroom-sbt .checkroom .radioBtn {
+              padding: 15px 5px;
+              border: none;
+              outline: none;
+              color: #3f3f3f; }
+              header .wrapper-header-center .header-center .search form .checkroom-sbt .checkroom .radioBtn input {
+                display: none; }
+                header .wrapper-header-center .header-center .search form .checkroom-sbt .checkroom .radioBtn input:checked + label span .fa {
+                  opacity: 1; }
+              header .wrapper-header-center .header-center .search form .checkroom-sbt .checkroom .radioBtn label span {
+                display: flex;
+                align-items: center;
+                margin-right: 5px;
+                width: 20px;
+                height: 20px;
+                border: solid 2px #3f3f3f;
+                border-radius: 2px;
+                position: relative; }
+                header .wrapper-header-center .header-center .search form .checkroom-sbt .checkroom .radioBtn label span .fa {
+                  font-size: 15px;
+                  opacity: 0; }
+          header .wrapper-header-center .header-center .search form .checkroom-sbt .wrapper-sbt {
+            padding-left: 10px;
+            align-self: stretch; }
+            header .wrapper-header-center .header-center .search form .checkroom-sbt .wrapper-sbt .sbt {
+              padding: 11px 20px;
+              border-radius: 3px;
+              border: solid 2px #1db1ae;
+              width: 100%;
+              height: 100%;
+              font-size: 14px;
+              text-transform: uppercase;
+              color: white;
+              font-family: 'Nexa Heavy', sans-serif;
+              background-color: #1db1ae;
+              cursor: pointer;
+              transition: all .5s; }
+              header .wrapper-header-center .header-center .search form .checkroom-sbt .wrapper-sbt .sbt:hover {
+                background-color: transparent;
+                color: #1db1ae; }
+              header .wrapper-header-center .header-center .search form .checkroom-sbt .wrapper-sbt .sbt .fa {
+                color: inherit;
+                margin-right: 5px; }
       header .wrapper-header-center .header-center p:last-of-type {
         margin-top: 40px; }
         header .wrapper-header-center .header-center p:last-of-type a {
           text-decoration: underline; }
+          header .wrapper-header-center .header-center p:last-of-type a:hover {
+            color: white; }
       header .wrapper-header-center .header-center a.my-btn {
         margin-top: 40px;
         padding: 15px 20px;
         border: solid 2px white;
         border-radius: 2px;
         background-color: transparent;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        color: white;
+        transition: all .5s; }
+        header .wrapper-header-center .header-center a.my-btn:hover {
+          background-color: white;
+          color: #3f3f3f; }

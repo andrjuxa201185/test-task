@@ -4,26 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>test task</title>
+    <title>Test Task</title>
     <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/jquery-ui.theme.css">
+    <link rel="stylesheet" href="../lib/jquery-ui.css">
     <link rel="stylesheet" href="../style/font-awesome.css">
     <link rel="stylesheet" href="../style/css.css">
     <script src="../lib/jQuery 3.3.1.js"></script>
     <script src="../lib/popper.min.js"></script>
     <script src="../lib/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-    $( function() {
-      $( "#datepicker" ).datepicker();
-      $( "#datepicker" ).datepicker( "option", "dateFormat", "d MM, yy" );
-    } );
-    </script>
+    <script src="../lib/jquery-ui.js"></script>
+    <script src="../script/js.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="d-flex flex-column">
         <div class="container">
             <nav class="d-flex justify-content-between align-items-center">
                 <a href="#">
@@ -38,44 +33,58 @@
                 </ul>
             </nav>
         </div>
-
         <div class="container wrapper-header-center">
             <div class="header-center d-flex align-items-center justify-content-center flex-column">
                 <h1>Lorem ipsum dolor</h1>
                 <p>Find and book conference rooms, workspace and pop-up offices</p>
                 <div class="search">
-                    <form action="#">
-
-                        <div class="location-date d-flex">
-
-                            <div class="location col-9 d-flex align-items-center">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <input type="text" placeholder="location" id="">
-                            </div>
-
-                            <div class="date col-3 d-flex align-items-center">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                <input type="text" placeholder="date" id="datepicker">
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            </div>
-
-                        </div>
-                        <div class="location-date d-flex">
-
-                            <div class="location col-9 d-flex align-items-center">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <input type="text" placeholder="location" id="">
-                            </div>
-
-                            <div class="date col-3 d-flex align-items-center">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                <input type="text" placeholder="date" id="">
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            </div>
-
+                <form action="#">
+                    <div class="location-date d-flex">
+                        <div class="location col-9 d-flex align-items-center">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <input type="text" placeholder="location" id="location">
                         </div>
 
-                    </form>
+                        <div class="date col-3 d-flex align-items-center">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <input type="text" placeholder="date" id="datepicker">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="checkroom-sbt d-flex align-items-center">
+                        <div class="checkroom d-flex align-items-center">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <div class="d-flex align-items-center justify-content-between flex-grow-1">
+                            <div class="radioBtn">
+                                <input type="radio" id="radio1" name="checkRoom">
+                                <label for="radio1" class="d-flex align-items-center"><span><i class="fa fa-check" aria-hidden="true"></i></span>XS 2-4 personer</label>
+                            </div>
+                            <div class="radioBtn">
+                                <input type="radio" id="radio2" name="checkRoom">
+                                <label for="radio2" class="d-flex align-items-center"><span><i class="fa fa-check" aria-hidden="true"></i></span>S 2-4 personer</label>
+                            </div>
+                            <div class="radioBtn">
+                                <input type="radio" id="radio3" name="checkRoom">
+                                <label for="radio3" class="d-flex align-items-center"><span><i class="fa fa-check" aria-hidden="true"></i></span>M 2-4 personer</label>
+                            </div>
+                            <div class="radioBtn">
+                                <input type="radio" id="radio4" name="checkRoom">
+                                <label for="radio4" class="d-flex align-items-center"><span><i class="fa fa-check" aria-hidden="true"></i></span>L 2-4 personer</label>
+                            </div>
+                            <div class="radioBtn">
+                                <input type="radio" id="radio5" name="checkRoom">
+                                <label for="radio5" class="d-flex align-items-center"><span><i class="fa fa-check" aria-hidden="true"></i></span>Alla</label>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="wrapper-sbt">
+                            <button type="submit" class="sbt d-flex align-items-center justify-content-center">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <span>SÖK</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
                 </div>
                 <p>For bigger quotes <a href="#">contact us</a></p>
                 <a href="#" class="my-btn">How it works</a>
