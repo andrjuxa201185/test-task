@@ -1,0 +1,29 @@
+.testimonials{
+  #carousel{
+    background-color: $turquoise;
+    padding: 80px 0;
+    .carousel-item{
+      color: white;
+      h3{
+        text-transform: uppercase;
+        font: {
+          size: 30px;
+          family: 'Nexa Heavy', sans-serif;
+          weight: bold;
+        }
+        letter-spacing: 1px;
+      }
+      .column{
+        padding: 0 20px;
+        p.description{
+          font-size: 18px;
+          font-family: 'Open Sana',sans-serif;
+          font-weight: 100;
+          line-height: 1.5em;
+          text-align: center;
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
