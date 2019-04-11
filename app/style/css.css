@@ -322,3 +322,43 @@ header {
       transform: rotate(45deg); }
     .testimonials #carousel a div.arrow-right {
       transform: rotate(-135deg); }
+
+footer {
+  padding: 45px 0;
+  background-color: #262626; }
+  footer .img {
+    margin-right: 50px; }
+    footer .img img {
+      width: 45px; }
+  footer .footer-content-top {
+    padding: 15px 0;
+    color: white;
+    font-family: 'Nexa Heavy', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: solid 1px #4c4c4c; }
+    footer .footer-content-top li:last-child {
+      color: #1db1ae; }
+    footer .footer-content-top a:hover {
+      color: #e0dddd; }
+    footer .footer-content-top a.dropdown-toggle::after {
+      display: none; }
+    footer .footer-content-top .fa {
+      margin-left: 5px;
+      font-size: 8px;
+      color: #909393; }
+  footer .footer-content-bottom {
+    padding: 15px 0;
+    color: #909393;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    text-transform: capitalize; }
+    footer .footer-content-bottom ul li {
+      margin-right: 30px; }
+    footer .footer-content-bottom .social a {
+      margin-left: 15px;
+      font-size: 22px;
+      cursor: pointer; }
+    footer .footer-content-bottom a:hover {
+      color: #7b7c7c; }
