@@ -215,20 +215,53 @@ header {
 .testimonials #carousel {
   background-color: #1db1ae;
   padding: 80px 0; }
-  .testimonials #carousel .carousel-item {
-    color: white; }
-    .testimonials #carousel .carousel-item h3 {
-      text-transform: uppercase;
-      font-size: 30px;
-      font-family: 'Nexa Heavy', sans-serif;
-      font-weight: bold;
-      letter-spacing: 1px; }
-    .testimonials #carousel .carousel-item .column {
-      padding: 0 20px; }
-      .testimonials #carousel .carousel-item .column p.description {
-        font-size: 18px;
-        font-family: 'Open Sana',sans-serif;
-        font-weight: 100;
-        line-height: 1.5em;
-        text-align: center;
-        opacity: .8; }
+  .testimonials #carousel .carousel-item h3 {
+    text-transform: uppercase;
+    margin-bottom: 65px;
+    color: white;
+    transform: scaleY(0.9);
+    font-size: 30px;
+    font-family: 'Nexa Heavy', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px; }
+  .testimonials #carousel .carousel-item .column {
+    padding: 0 40px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Open Sans', sans-serif; }
+    .testimonials #carousel .carousel-item .column p.description {
+      font-size: 18px;
+      font-family: 'Open Sana',sans-serif;
+      font-weight: 100;
+      line-height: 1.5em;
+      text-align: center; }
+    .testimonials #carousel .carousel-item .column div.lines {
+      align-self: stretch;
+      margin: 25px 0; }
+      .testimonials #carousel .carousel-item .column div.lines .top-square {
+        height: 8px;
+        border: solid 3px white;
+        border-top: none; }
+      .testimonials #carousel .carousel-item .column div.lines .bottom-square {
+        height: 15px; }
+        .testimonials #carousel .carousel-item .column div.lines .bottom-square div:first-child {
+          border-right: solid 2px white; }
+        .testimonials #carousel .carousel-item .column div.lines .bottom-square div:last-child {
+          border-left: solid 1px white; }
+    .testimonials #carousel .carousel-item .column img {
+      width: 90px; }
+    .testimonials #carousel .carousel-item .column p.name {
+      margin: 10px 0 5px;
+      font-weight: 600; }
+    .testimonials #carousel .carousel-item .column p:last-child {
+      font-size: 14px; }
+  .testimonials #carousel a {
+    opacity: 1; }
+    .testimonials #carousel a div.arrow {
+      width: 45px;
+      height: 45px;
+      border-left: solid 3px white;
+      border-bottom: solid 3px white; }
+    .testimonials #carousel a div.arrow-left {
+      transform: rotate(45deg); }
+    .testimonials #carousel a div.arrow-right {
+      transform: rotate(-135deg); }

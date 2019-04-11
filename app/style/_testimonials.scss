@@ -3,9 +3,11 @@
     background-color: $turquoise;
     padding: 80px 0;
     .carousel-item{
-      color: white;
       h3{
         text-transform: uppercase;
+        margin-bottom: 65px;
+        color: white;
+        transform: scaleY(.9);
         font: {
           size: 30px;
           family: 'Nexa Heavy', sans-serif;
@@ -14,15 +16,59 @@
         letter-spacing: 1px;
       }
       .column{
-        padding: 0 20px;
+        padding: 0 40px;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: 'Open Sans', sans-serif;
         p.description{
           font-size: 18px;
           font-family: 'Open Sana',sans-serif;
           font-weight: 100;
           line-height: 1.5em;
           text-align: center;
-          opacity: .8;
         }
+        div.lines{
+          align-self: stretch;
+          margin: 25px 0;
+          .top-square{
+            height: 8px;
+            border: solid 3px white;
+            border-top: none;
+          }
+          .bottom-square{
+            height: 15px;
+            div:first-child{
+              border-right: solid 2px white;
+            }
+            div:last-child{
+              border-left: solid 1px white;
+            }
+          }
+        }
+        img{
+          width: 90px;
+        }
+        p.name{
+          margin: 10px 0 5px;
+          font-weight: 600;
+        }
+        p:last-child{
+          font-size: 14px;
+        }
+      }
+    }
+    a{
+      opacity: 1;
+      div.arrow{
+        width: 45px;
+        height: 45px;
+        border-left: solid 3px white;
+        border-bottom: solid 3px white;
+      }
+      div.arrow-left{
+        transform: rotate(45deg);
+      }
+      div.arrow-right{
+        transform: rotate(-135deg);
       }
     }
   }
