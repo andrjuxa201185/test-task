@@ -2,9 +2,7 @@ const gulp = require("gulp");
 // const jsMinify = require("gulp-uglify");
 const cssMinify = require("gulp-minify-css");
 const runSequence = require("run-sequence");
-// const imagemin = require("gulp-imagemin");
 const clean = require("gulp-clean");
-// const rigger = require("gulp-rigger");
 const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
 const watch = require("gulp-watch");
@@ -88,19 +86,6 @@ gulp.task('reload-css', function(){
 
 gulp.task('images', function(){
     return gulp.src(path.src.images)
-    // .pipe(imagemin([
-    //     imagemin.gifsicle({interlaced: true}),
-    //     imagemin.jpegtran({progressive: true}),
-    //     imagemin.optipng({optimizationLevel: 5}),
-    //     imagemin.svgo({
-    //         plugins: [
-    //             {removeViewBox: true},
-    //             {cleanupIDs: false}
-    //         ]
-    //     })
-    // ], {
-    //     verbose: true
-    // }))
     .pipe(gulp.dest(path.build .images))
     .pipe(reload({stream: true}));
 });
@@ -139,6 +124,19 @@ gulp.task('run', function(){
         'js-minify',
         'browser-sync',
         'watch'
+    );
+});
+gulp.task('server', function(){
+    runSequence(
+        'clean', 
+        'html', 
+        'data',
+        'fonts',
+        'lib',
+        'reload-css',
+        'images',
+        'js-minify',
+        'browser-sync',
     );
 });
 

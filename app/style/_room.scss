@@ -38,6 +38,7 @@
       height: 3px;
       border: none;
       background-color: $turquoise;
+      cursor: pointer;
       div{
         background-color: #e4e4e4;
       }
@@ -49,6 +50,7 @@
         border:none;
         background-color: $turquoise;
         outline: none;
+        cursor: pointer;
       } 
     }
     .slider-control-desc{

@@ -242,7 +242,8 @@ header {
   .room .slider-control #slider-range-max {
     height: 3px;
     border: none;
-    background-color: #1db1ae; }
+    background-color: #1db1ae;
+    cursor: pointer; }
     .room .slider-control #slider-range-max div {
       background-color: #e4e4e4; }
     .room .slider-control #slider-range-max span {
@@ -252,7 +253,8 @@ header {
       border-radius: 50%;
       border: none;
       background-color: #1db1ae;
-      outline: none; }
+      outline: none;
+      cursor: pointer; }
   .room .slider-control .slider-control-desc {
     margin-top: 25px; }
     .room .slider-control .slider-control-desc div {
