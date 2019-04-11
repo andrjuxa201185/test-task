@@ -1,0 +1,47 @@
+.room{
+  padding: 100px 0;
+  .slider-control{
+    .extra-line{
+      height: 3px;
+      width: 50px;
+      background-color: $turquoise;
+      &:last-of-type{
+        background-color: #e4e4e4;
+      }
+    }
+    #slider-range-max{
+      height: 3px;
+      border: none;
+      background-color: $turquoise;
+      div{
+        background-color: #e4e4e4;
+      }
+      span{
+        top: -0.4em;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $turquoise;
+        border:none;
+        outline: none;
+      } 
+    }
+    .slider-control-desc{
+      margin-top: 25px;
+      div{
+        font-family: 'Nexa Heavy', sans-serif;
+        span{
+          font-weight: bold;
+          color: #242424;
+          font-size: 22px;
+          text-transform: uppercase;
+        }
+        p{
+          margin-top: 5px;
+          font-size: 12px;
+          color: #8c8c8c;
+        }
+      }
+    }
+  }
+}

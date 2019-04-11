@@ -212,6 +212,42 @@ header {
           background-color: white;
           color: #3f3f3f; }
 
+.room {
+  padding: 100px 0; }
+  .room .slider-control .extra-line {
+    height: 3px;
+    width: 50px;
+    background-color: #1db1ae; }
+    .room .slider-control .extra-line:last-of-type {
+      background-color: #e4e4e4; }
+  .room .slider-control #slider-range-max {
+    height: 3px;
+    border: none;
+    background-color: #1db1ae; }
+    .room .slider-control #slider-range-max div {
+      background-color: #e4e4e4; }
+    .room .slider-control #slider-range-max span {
+      top: -0.4em;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #1db1ae;
+      border: none;
+      outline: none; }
+  .room .slider-control .slider-control-desc {
+    margin-top: 25px; }
+    .room .slider-control .slider-control-desc div {
+      font-family: 'Nexa Heavy', sans-serif; }
+      .room .slider-control .slider-control-desc div span {
+        font-weight: bold;
+        color: #242424;
+        font-size: 22px;
+        text-transform: uppercase; }
+      .room .slider-control .slider-control-desc div p {
+        margin-top: 5px;
+        font-size: 12px;
+        color: #8c8c8c; }
+
 .testimonials #carousel {
   background-color: #1db1ae;
   padding: 80px 0; }

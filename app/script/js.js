@@ -17,4 +17,18 @@ $( function() {
     $( "#location" ).autocomplete({
         source: citys
      });
+
+    $( function() {
+      $( "#slider-range-max" ).slider({
+        range: "max",
+        min: 1,
+        max: 4,
+        value: 2,
+        slide: function(event, ui) {
+          console.log(ui.value);
+          // $('.slider-inner').html(ui.value);
+        }
+      });
+
+    } );
 } );
