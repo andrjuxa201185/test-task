@@ -83,21 +83,21 @@ header {
         header nav ul li a:hover {
           color: white; }
       header nav ul li.active {
-        background-color: #1db1ae;
-        padding: 10px 20px;
-        border-radius: 25px;
         display: flex;
         justify-content: space-between;
-        align-items: center; }
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #1db1ae;
+        border-radius: 25px; }
         header nav ul li.active span {
           display: flex;
           justify-content: center;
           align-items: center;
           margin-left: 7px;
-          background-color: #f35f52;
-          border-radius: 50%;
           width: 20px;
           height: 20px;
+          background-color: #f35f52;
+          border-radius: 50%;
           color: white;
           font-size: 11px; }
   header .wrapper-header-center {
@@ -119,18 +119,18 @@ header {
         margin-top: 60px;
         background-color: rgba(38, 38, 38, 0.3); }
         header .wrapper-header-center .header-center .search form .fa {
+          min-width: 20px;
           color: #3f3f3f;
-          font-size: 20px;
-          min-width: 20px; }
+          font-size: 20px; }
         header .wrapper-header-center .header-center .search form .location-date {
           width: 845px;
           border-radius: 3px;
           background-color: white; }
           header .wrapper-header-center .header-center .search form .location-date input {
+            flex-grow: 1;
+            min-width: 100px;
             padding: 15px 5px;
             border: none;
-            min-width: 100px;
-            flex-grow: 1;
             outline: none; }
           header .wrapper-header-center .header-center .search form .location-date .location {
             border-right: solid 1px #dadada; }
@@ -154,20 +154,20 @@ header {
                 font-size: 12px;
                 color: #8c8c8c; }
                 header .wrapper-header-center .header-center .search form .checkroom-sbt .checkroom .radioBtn label b {
+                  margin-right: 10px;
                   font-size: 16px;
                   font-weight: bold;
                   font-family: 'Open Sans', sans-serif;
-                  margin-right: 10px;
                   color: #242424; }
                 header .wrapper-header-center .header-center .search form .checkroom-sbt .checkroom .radioBtn label span {
+                  position: relative;
                   display: flex;
                   align-items: center;
                   margin-right: 5px;
                   width: 20px;
                   height: 20px;
                   border: solid 2px #3f3f3f;
-                  border-radius: 2px;
-                  position: relative; }
+                  border-radius: 2px; }
                   header .wrapper-header-center .header-center .search form .checkroom-sbt .checkroom .radioBtn label span .fa {
                     font-size: 15px;
                     opacity: 0; }
@@ -176,23 +176,23 @@ header {
             align-self: stretch; }
             header .wrapper-header-center .header-center .search form .checkroom-sbt .wrapper-sbt .sbt {
               padding: 11px 20px;
-              border-radius: 3px;
-              border: solid 2px #1db1ae;
               width: 100%;
               height: 100%;
               font-size: 14px;
               text-transform: uppercase;
               font-family: 'Nexa Heavy', sans-serif;
-              background-color: transparent;
               color: #1db1ae;
+              background-color: transparent;
+              border-radius: 3px;
+              border: solid 2px #1db1ae;
               cursor: pointer;
               transition: all .5s; }
               header .wrapper-header-center .header-center .search form .checkroom-sbt .wrapper-sbt .sbt:hover {
                 background-color: #1db1ae;
                 color: white; }
               header .wrapper-header-center .header-center .search form .checkroom-sbt .wrapper-sbt .sbt .fa {
-                color: inherit;
-                margin-right: 5px; }
+                margin-right: 5px;
+                color: inherit; }
       header .wrapper-header-center .header-center p:last-of-type {
         margin-top: 40px; }
         header .wrapper-header-center .header-center p:last-of-type a {
@@ -202,18 +202,37 @@ header {
       header .wrapper-header-center .header-center a.my-btn {
         margin-top: 40px;
         padding: 15px 20px;
+        text-transform: uppercase;
+        color: white;
         border: solid 2px white;
         border-radius: 2px;
         background-color: transparent;
-        text-transform: uppercase;
-        color: white;
         transition: all .5s; }
         header .wrapper-header-center .header-center a.my-btn:hover {
-          background-color: white;
-          color: #3f3f3f; }
+          color: #3f3f3f;
+          background-color: white; }
 
-.room {
-  padding: 100px 0; }
+.room .slider-inner .slider-inner-item {
+  display: none;
+  padding: 140px 0 100px;
+  background-color: #95e7d1; }
+  .room .slider-inner .slider-inner-item .description {
+    color: white; }
+    .room .slider-inner .slider-inner-item .description h3 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-family: 'Nexa Heavy', sans-serif;
+      font-size: 40px;
+      font-weight: bold; }
+    .room .slider-inner .slider-inner-item .description p {
+      margin-bottom: 50px;
+      font-size: 20px;
+      font-family: 'Open Sans', sans-serif; }
+  .room .slider-inner .slider-inner-item.active {
+    display: block; }
+
+.room .slider-control {
+  padding: 40px 0; }
   .room .slider-control .extra-line {
     height: 3px;
     width: 50px;
@@ -231,8 +250,8 @@ header {
       width: 15px;
       height: 15px;
       border-radius: 50%;
-      background-color: #1db1ae;
       border: none;
+      background-color: #1db1ae;
       outline: none; }
   .room .slider-control .slider-control-desc {
     margin-top: 25px; }
@@ -249,13 +268,13 @@ header {
         color: #8c8c8c; }
 
 .testimonials #carousel {
-  background-color: #1db1ae;
-  padding: 80px 0; }
+  padding: 80px 0;
+  background-color: #1db1ae; }
   .testimonials #carousel .carousel-item h3 {
-    text-transform: uppercase;
     margin-bottom: 65px;
-    color: white;
     transform: scaleY(0.9);
+    text-transform: uppercase;
+    color: white;
     font-size: 30px;
     font-family: 'Nexa Heavy', sans-serif;
     font-weight: bold;
@@ -271,8 +290,8 @@ header {
       line-height: 1.5em;
       text-align: center; }
     .testimonials #carousel .carousel-item .column div.lines {
-      align-self: stretch;
-      margin: 25px 0; }
+      margin: 25px 0;
+      align-self: stretch; }
       .testimonials #carousel .carousel-item .column div.lines .top-square {
         height: 8px;
         border: solid 3px white;

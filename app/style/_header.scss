@@ -23,21 +23,21 @@ header {
                 }
             }
             &.active{
-                background-color: $turquoise;
-                padding: 10px 20px;
-                border-radius: 25px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                padding: 10px 20px;
+                background-color: $turquoise;
+                border-radius: 25px;
                 span{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     margin-left: 7px;
-                    background-color: $orange;
-                    border-radius: 50%;
                     width: 20px;
                     height: 20px;
+                    background-color: $orange;
+                    border-radius: 50%;
                     color: white;
                     font-size: 11px;
                 }
@@ -67,19 +67,19 @@ header {
                background-color: rgba(38, 38, 38, 0.3);
                form {
                 .fa {
+                    min-width: 20px;
                     color: $lightBlack;
                     font-size: 20px;
-                    min-width: 20px;
                 }
                .location-date {
                    width: 845px;
                    border-radius: 3px;
                    background-color: white;
                    input {
+                        flex-grow: 1;
+                        min-width: 100px;
                        padding: 15px 5px;
                        border: none;
-                       min-width: 100px;
-                       flex-grow: 1;
                        outline: none;
                    }
                    .location {
@@ -108,13 +108,14 @@ header {
                             font-size: 12px;
                             color: #8c8c8c;
                             b{
+                                margin-right: 10px;
                                 font-size: 16px;
                                 font-weight: bold;
                                 font-family: 'Open Sans', sans-serif;
-                                margin-right: 10px;
                                 color: #242424;
                             }
                             span {
+                                position: relative;
                                display: flex;
                                align-items: center;
                                margin-right: 5px;
@@ -122,7 +123,6 @@ header {
                                 height: 20px;
                                 border:solid 2px $lightBlack;
                                 border-radius: 2px;
-                                position: relative;
                                 .fa {
                                     font-size: 15px;
                                     opacity: 0;
@@ -136,15 +136,15 @@ header {
                        align-self: stretch;
                        .sbt {
                            padding: 11px 20px;
-                           border-radius: 3px;
-                           border: solid 2px $turquoise;
-                            width: 100%;
+                           width: 100%;
                             height: 100%;
                             font-size: 14px;
                             text-transform: uppercase;   
                             font-family: 'Nexa Heavy', sans-serif;
-                            background-color: transparent;
                             color: $turquoise;
+                            background-color: transparent;
+                            border-radius: 3px;
+                           border: solid 2px $turquoise;
                             cursor: pointer;
                             transition: all .5s;
                             &:hover{
@@ -152,8 +152,8 @@ header {
                                 color: white;
                             }
                             .fa{
-                                color: inherit;
                                 margin-right: 5px;
+                                color: inherit;
                             }
                        }
                    }
@@ -172,15 +172,15 @@ header {
            a.my-btn {
                margin-top: 40px;
                padding: 15px 20px;
+               text-transform: uppercase;
+               color: white;
                border: solid 2px white;
                border-radius: 2px;
                background-color: transparent;
-               text-transform: uppercase;
-               color: white;
                transition: all .5s;
                &:hover {
+                    color: $lightBlack;
                    background-color: white;
-                   color: $lightBlack;
                }
            }
         }

@@ -1,13 +1,13 @@
 .testimonials{
   #carousel{
-    background-color: $turquoise;
     padding: 80px 0;
+    background-color: $turquoise;
     .carousel-item{
       h3{
-        text-transform: uppercase;
         margin-bottom: 65px;
-        color: white;
         transform: scaleY(.9);
+        text-transform: uppercase;
+        color: white;
         font: {
           size: 30px;
           family: 'Nexa Heavy', sans-serif;
@@ -27,8 +27,8 @@
           text-align: center;
         }
         div.lines{
-          align-self: stretch;
           margin: 25px 0;
+          align-self: stretch;
           .top-square{
             height: 8px;
             border: solid 3px white;
