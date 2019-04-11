@@ -8,11 +8,7 @@
         transform: scaleY(.9);
         text-transform: uppercase;
         color: white;
-        font: {
-          size: 30px;
-          family: 'Nexa Heavy', sans-serif;
-          weight: bold;
-        }
+        @include text(30, bold, 'Nexa Heavy');
         letter-spacing: 1px;
       }
       .column{
@@ -20,9 +16,7 @@
         color: rgba(255, 255, 255, 0.8);
         font-family: 'Open Sans', sans-serif;
         p.description{
-          font-size: 18px;
-          font-family: 'Open Sana',sans-serif;
-          font-weight: 100;
+          @include text(18, 100);
           line-height: 1.5em;
           text-align: center;
         }

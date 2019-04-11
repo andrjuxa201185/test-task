@@ -1,3 +1,13 @@
 $orange: #f35f52;
 $turquoise: #1db1ae;
 $lightBlack: #3f3f3f;
+$yellow: #f2c32e;
+$red: #f35f52;
+$blue: #3792d8;
+
+@mixin text($size: 16, $weight: inherit, $family:'Open Sans') {
+  font-family: $family, sans-serif;
+  font-size: $size+px;
+  font-weight: $weight;
+}
+ 

@@ -27,7 +27,7 @@ $( function() {
       range: "max",
       min: 1,
       max: 4,
-      value: 2,
+      value: 1,
       slide: function(event, ui) {
         if (listSliderItem[0]) {
           for (const item of listSliderItem) {

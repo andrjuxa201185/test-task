@@ -9,18 +9,24 @@
         h3{
           margin-bottom: 30px;
           text-transform: uppercase;
-          font-family: 'Nexa Heavy', sans-serif;
-          font-size: 40px;
-          font-weight: bold;
+          @include text(40, bold, 'Nexa Heavy');
         }
         p{
           margin-bottom: 50px;
-          font-size: 20px;
-          font-family: 'Open Sans', sans-serif;
+          @include text(20);
         }
       }
       &.active{
         display: block;
+      }
+      &:nth-of-type(2){
+        background-color: $yellow;
+      }
+      &:nth-of-type(3){
+        background-color: $red;
+      }
+      &:nth-of-type(4){
+        background-color: $blue;
       }
     }
   }
@@ -58,9 +64,8 @@
       div{
         font-family: 'Nexa Heavy', sans-serif;
         span{
-          font-weight: bold;
           color: #242424;
-          font-size: 22px;
+          @include text(22, bold, 'Nexa Heavy');
           text-transform: uppercase;
         }
         p{

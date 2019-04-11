@@ -15,9 +15,7 @@ header {
                 transform: scaleY(0.9);
                 color: white;
                 text-transform: uppercase;
-                font-family: 'Nexa Heavy', sans-serif;
-                font-size: 13px;
-                font-weight: bold;
+                @include text(13, bold, 'Nexa Heavy');
                 &:hover {
                     color: white;
                 }
@@ -44,16 +42,13 @@ header {
             }
         }
     }
-
     .wrapper-header-center {
        flex-grow: 1;
        .header-center {
            height: 100%;
            color: white;
            h1 {
-               font-size: 42px;
-               font-family: 'Nexa Heavy', sans-serif;
-               font-weight: bold;
+               @include text(42, bold, 'Nexa Heavy');
                text-transform: uppercase;
                transform: scaleY(.9);
            }
@@ -109,9 +104,7 @@ header {
                             color: #8c8c8c;
                             b{
                                 margin-right: 10px;
-                                font-size: 16px;
-                                font-weight: bold;
-                                font-family: 'Open Sans', sans-serif;
+                                @include text(16, bold);
                                 color: #242424;
                             }
                             span {
@@ -138,9 +131,8 @@ header {
                            padding: 11px 20px;
                            width: 100%;
                             height: 100%;
-                            font-size: 14px;
                             text-transform: uppercase;   
-                            font-family: 'Nexa Heavy', sans-serif;
+                            @include text(14, inherit, 'Nexa Heavy');
                             color: $turquoise;
                             background-color: transparent;
                             border-radius: 3px;

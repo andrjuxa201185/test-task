@@ -10,9 +10,7 @@ footer{
   .footer-content-top{
     padding: 15px 0;
     color: white;
-    font-family: 'Nexa Heavy', sans-serif;
-    font-size: 13px;
-    font-weight: bold;
+    @include text(13, bold, 'Nexa Heavy');
     text-transform: uppercase;
     border-bottom: solid 1px #4c4c4c;
     & li:last-child{
@@ -34,8 +32,7 @@ footer{
   .footer-content-bottom{
     padding: 15px 0;
     color: #909393;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    @include text(13);
     text-transform: capitalize;
     ul li{
       margin-right: 30px;
