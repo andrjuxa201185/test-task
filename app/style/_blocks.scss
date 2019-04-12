@@ -1,33 +1,70 @@
 .blocks{
-  .img-square{
-
+  padding: 60px 0;
+  background-color: #efefef;
+  h2{
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    @include text(30, bold, 'Nexa Heavy');
   }
-  .img-round{
-
+  .wrapper-block-item{
+    padding: 0 10px;
+    .block-item{
+      padding-bottom: 20px;
+      background-color: white;
+      .img-square{
+        align-self: stretch;
+        overflow: hidden;
+        img{
+          width: 100%;
+        }
+      }
+      .img-round{
+        border:solid 3px white;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        img{
+          width: 100%;
+        }
+      }
+      h3{
+        margin-top: -20px;
+        @include text(18, bold);
+        color: $turquoise;
+      }
+      p:first-of-type{
+        margin-top: 10px;
+        @include text(15, 600);
+        color: $lightBlack;
+      }
+      p:last-of-type{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        @include text(11, 500);
+        color: #8c8c8c;
+      }
+      span:first-of-type{
+        align-self: stretch;
+        padding-top: 25px;
+        @include text(22, bold);
+        text-align: center;
+        color: $lightBlack;
+        border-top: 1px solid #efefef;
+      }
+      span:last-of-type{
+        margin-top: 5px;
+        color: #8c8c8c;
+        @include text(12);
+      }
+      a{
+        margin-top: 20px;
+        padding: 10px 20px;
+        @include text(11, bold);
+        text-transform: uppercase;
+        color: white;
+        background-color: $turquoise;
+        border-radius: 20px;
+      }
+    }
   }
-  h3{
-    @include text(18, bold);
-    color: $turquoise;
-  }
-  p:first-of-type{
-    @include text(15, 600);
-    color: $lightBlack;
-  }
-  p:last-of-type{
-    @include text(11, 500);
-    color: #8c8c8c;
-  }
-  span:first-of-type{
-    align-self: stretch;
-    padding-top: 25px;
-    @include text(22, bold);
-    color: $lightBlack;
-    border-top: 1px solid #efefef;
-  }
-  span:last-of-type{
-    
-  }
-  a{
-
-  }
+  
 }
