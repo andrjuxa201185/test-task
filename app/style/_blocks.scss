@@ -1,0 +1,33 @@
+.blocks{
+  .img-square{
+
+  }
+  .img-round{
+
+  }
+  h3{
+    @include text(18, bold);
+    color: $turquoise;
+  }
+  p:first-of-type{
+    @include text(15, 600);
+    color: $lightBlack;
+  }
+  p:last-of-type{
+    @include text(11, 500);
+    color: #8c8c8c;
+  }
+  span:first-of-type{
+    align-self: stretch;
+    padding-top: 25px;
+    @include text(22, bold);
+    color: $lightBlack;
+    border-top: 1px solid #efefef;
+  }
+  span:last-of-type{
+    
+  }
+  a{
+
+  }
+}

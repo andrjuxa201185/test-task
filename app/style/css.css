@@ -213,6 +213,33 @@ header {
           color: #3f3f3f;
           background-color: white; }
 
+.blocks h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1db1ae; }
+
+.blocks p:first-of-type {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3f3f3f; }
+
+.blocks p:last-of-type {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: #8c8c8c; }
+
+.blocks span:first-of-type {
+  align-self: stretch;
+  padding-top: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #3f3f3f;
+  border-top: 1px solid #efefef; }
+
 .room .slider-inner .slider-inner-item {
   display: none;
   padding: 140px 0 100px;
