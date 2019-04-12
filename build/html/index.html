@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Task</title>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/jquery-ui.theme.css">
+    <link rel="stylesheet" href="../lib/jquery-ui.css">
+    <link rel="stylesheet" href="../style/font-awesome.css">
+    <link rel="stylesheet" href="../style/css.css">
+    <script src="../lib/jQuery 3.3.1.js"></script>
+    <script src="../lib/popper.min.js"></script>
+    <script src="../lib/bootstrap.min.js"></script>
+    <script src="../lib/jquery-ui.js"></script>
+    <script src="../script/js.js"></script>
+</head>
+
+<body>
+    <header class="d-flex flex-column">
+        <div class="container">
+            <nav class="d-flex justify-content-between align-items-center">
+                <a href="#">
+                    <img src="../images/logo.png" alt="">
+                </a>
+                <ul class="d-flex justify-content-between align-items-center">
+                    <li><a href="">about</a></li>
+                    <li><a href="">faq</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">suport</a></li>
+                    <li class="active"><a href="">min bokning</a><span>1</span></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container wrapper-header-center">
+            <div class="header-center d-flex align-items-center justify-content-center flex-column">
+                <h1>Lorem ipsum dolor</h1>
+                <p>Find and book conference rooms, workspace and pop-up offices</p>
+                <div class="search">
+                <form action="#">
+                    <div class="location-date d-flex">
+                        <div class="location col-9 d-flex align-items-center">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <input type="text" placeholder="location" id="location">
+                        </div>
+                        <div class="date col-3 d-flex align-items-center">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <input type="text" placeholder="date" id="datepicker">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="checkroom-sbt d-flex align-items-center">
+                        <div class="checkroom d-flex align-items-center">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <div class="d-flex align-items-center justify-content-between flex-grow-1">
+                            <div class="radioBtn">
+                                <input type="radio" id="radio1" name="checkRoom">
+                                <label for="radio1" class="d-flex align-items-center"><span><i class="fa fa-check" aria-hidden="true"></i></span><b>XS</b></span> 2-4 personer</label>
+                            </div>
+                            <div class="radioBtn">
+                                <input type="radio" id="radio2" name="checkRoom">
+                                <label for="radio2" class="d-flex align-items-center"><span><i class="fa fa-check" aria-hidden="true"></i></span><b>S</b> 2-4 personer</label>
+                            </div>
+                            <div class="radioBtn">
+                                <input type="radio" id="radio3" name="checkRoom">
+                                <label for="radio3" class="d-flex align-items-center"><span><i class="fa fa-check" aria-hidden="true"></i></span><b>M</b> 2-4 personer</label>
+                            </div>
+                            <div class="radioBtn">
+                                <input type="radio" id="radio4" name="checkRoom">
+                                <label for="radio4" class="d-flex align-items-center"><span><i class="fa fa-check" aria-hidden="true"></i></span><b>L</b> 2-4 personer</label>
+                            </div>
+                            <div class="radioBtn">
+                                <input type="radio" id="radio5" name="checkRoom">
+                                <label for="radio5" class="d-flex align-items-center"><span><i class="fa fa-check" aria-hidden="true"></i></span><b>Alla</b></label>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="wrapper-sbt">
+                            <button type="submit" class="sbt d-flex align-items-center justify-content-center">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <span>SÖK</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+                <p>For bigger quotes <a href="#">contact us</a></p>
+                <a href="#" class="my-btn">How it works</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="blocks">
+            
+        </section>
+
+        <section class="room">
+            <div class="slider-inner">
+                <div class="slider-inner-item active" data-item="1">
+                    <div class="col-8 offset-2 d-flex">
+                        <div class="col-6 img d-flex justify-content-center align-items-center">
+                            <img src="../images/round-table.png" alt="">
+                        </div>
+                        <div class="col-6 description d-flex flex-column justify-content-center">
+                            <h3 class="text-center">Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea consequuntur repellat repudiandae adipisci enim quae magnam id nihil ipsum voluptates, deserunt culpa similique illo in dolorem rem porro! Consectetur?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-inner-item" data-item="2">
+                    <div class="col-8 offset-2 d-flex">
+                        <div class="col-6 img d-flex justify-content-center align-items-center">
+                            <img src="../images/round-table.png" alt="">
+                        </div>
+                        <div class="col-6 description d-flex flex-column justify-content-center">
+                            <h3 class="text-center">Lorem dolor</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea consequuntur repellat repudiandae adipisci enim quae magnam id nihil ipsum voluptates.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-inner-item" data-item="3">
+                    <div class="col-8 offset-2 d-flex">
+                        <div class="col-6 img d-flex justify-content-center align-items-center">
+                            <img src="../images/round-table.png" alt="">
+                        </div>
+                        <div class="col-6 description d-flex flex-column justify-content-center">
+                            <h3 class="text-center">Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea consequuntur repellat repudiandae adipisci enim quae magnam id nihil ipsum voluptates, deserunt culpa similique illo?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-inner-item" data-item="4">
+                    <div class="col-8 offset-2 d-flex">
+                        <div class="col-6 img d-flex justify-content-center align-items-center">
+                            <img src="../images/round-table.png" alt="">
+                        </div>
+                        <div class="col-6 description d-flex flex-column justify-content-center">
+                            <h3 class="text-center">Lorem</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea consequuntur repellat repudiandae adipisci enim quae magnam id nihil ipsum voluptates, deserunt culpa similique illo in dolorem rem porro! Consectetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia neque exercitationem quas?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-control">
+                <div class="col-8 offset-2 d-flex align-items-center">
+                    <div class="extra-line"></div>
+                    <div id="slider-range-max" class="flex-grow-1"></div>
+                    <div class="extra-line"></div>
+                </div>
+                <div class="col-8 offset-2">
+                    <div class="slider-control-desc d-flex justify-content-between">
+                        <div class="d-flex flex-column align-items-center"><span>x-small</span><p>2-4 personer</p></div>
+                        <div class="d-flex flex-column align-items-center"><span>small</span><p>5-8 personer</p></div>
+                        <div class="d-flex flex-column align-items-center"><span>medium</span><p>9-12 personer</p></div>
+                        <div class="d-flex flex-column align-items-center"><span>large</span><p>13-20 personer</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div id="carousel" class="carousel slide" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <h3 class="text-center">testimonials</h3>
+                    <div class="row col-8 offset-2">
+                        <div class="column col-4 d-flex flex-column align-items-center">
+                            <p class="description">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
+                            <div class="lines d-flex flex-column">
+                                <div class="top-square"></div>
+                                <div class="bottom-square d-flex justify-content-center">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <img src="../images/testi-1.png" alt="">
+                            <p class="name">Namn Efternamn</p>
+                            <p>Titel</p>
+                        </div>
+                        <div class="column col-4 d-flex flex-column align-items-center">
+                            <p class="description">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
+                            <div class="lines d-flex flex-column">
+                                <div class="top-square"></div>
+                                <div class="bottom-square d-flex justify-content-center">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <img src="../images/testi-2.png" alt="">
+                            <p class="name">Namn Efternamn</p>
+                            <p>Titel</p>
+                        </div>
+                        <div class="column col-4 d-flex flex-column align-items-center">
+                            <p class="description">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
+                            <div class="lines d-flex flex-column">
+                                <div class="top-square"></div>
+                                <div class="bottom-square d-flex justify-content-center">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <img src="../images/testi-3.png" alt="">
+                            <p class="name">Namn Efternamn</p>
+                            <p>Titel</p>
+                        </div>
+                    </div>
+                  </div>                  
+                  <div class="carousel-item">
+                    <h3 class="text-center">testimonials</h3>
+                    <div class="row col-8 offset-2">
+                        <div class="column col-4 d-flex flex-column align-items-center">
+                            <p class="description">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
+                            <div class="lines d-flex flex-column">
+                                <div class="top-square"></div>
+                                <div class="bottom-square d-flex justify-content-center">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <img src="../images/testi-1.png" alt="">
+                            <p class="name">Namn Efternamn</p>
+                            <p>Titel</p>
+                        </div>
+                        <div class="column col-4 d-flex flex-column align-items-center">
+                            <p class="description">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
+                            <div class="lines d-flex flex-column">
+                                <div class="top-square"></div>
+                                <div class="bottom-square d-flex justify-content-center">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <img src="../images/testi-2.png" alt="">
+                            <p class="name">Namn Efternamn</p>
+                            <p>Titel</p>
+                        </div>
+                        <div class="column col-4 d-flex flex-column align-items-center">
+                            <p class="description">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
+                            <div class="lines d-flex flex-column">
+                                <div class="top-square"></div>
+                                <div class="bottom-square d-flex justify-content-center">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <img src="../images/testi-3.png" alt="">
+                            <p class="name">Namn Efternamn</p>
+                            <p>Titel</p>
+                        </div>
+                    </div>
+                  </div>                  
+                  <div class="carousel-item">
+                    <h3 class="text-center">testimonials</h3>
+                    <div class="row col-8 offset-2">
+                        <div class="column col-4 d-flex flex-column align-items-center">
+                            <p class="description">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
+                            <div class="lines d-flex flex-column">
+                                <div class="top-square"></div>
+                                <div class="bottom-square d-flex justify-content-center">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <img src="../images/testi-1.png" alt="">
+                            <p class="name">Namn Efternamn</p>
+                            <p>Titel</p>
+                        </div>
+                        <div class="column col-4 d-flex flex-column align-items-center">
+                            <p class="description">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
+                            <div class="lines d-flex flex-column">
+                                <div class="top-square"></div>
+                                <div class="bottom-square d-flex justify-content-center">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <img src="../images/testi-2.png" alt="">
+                            <p class="name">Namn Efternamn</p>
+                            <p>Titel</p>
+                        </div>
+                        <div class="column col-4 d-flex flex-column align-items-center">
+                            <p class="description">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
+                            <div class="lines d-flex flex-column">
+                                <div class="top-square"></div>
+                                <div class="bottom-square d-flex justify-content-center">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <img src="../images/testi-3.png" alt="">
+                            <p class="name">Namn Efternamn</p>
+                            <p>Titel</p>
+                        </div>
+                    </div>
+                  </div>                  
+                                
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <div class="arrow arrow-left"></div>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <div class="arrow arrow-right"></div>
+                </a>
+              </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="img d-flex align-items-center">
+                    <img src="../images/footer.png" alt="">
+                </div>
+                <div class="footer-content flex-grow-1">
+                    <ul class="footer-content-top d-flex align-items-center justify-content-between">
+                        <li><a href="">about</a></li>
+                        <li><a href="">faq</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">suport</a></li>
+                        <li><a href="">help forum</a></li>
+                        <li><a href="">feedback</a></li>
+                        <li><a href="">lorem ipsum</a></li>
+                        <li><a href="">lorem ipsum</a></li>
+                        <li><a href="" class="dropdown-toggle d-flex align-items-start" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">english<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Enlish</a>
+                                <a class="dropdown-item" href="#">Ukrainian</a>
+                                <a class="dropdown-item" href="#">Russian</a>
+                            </div>
+                        </li>
+                        <li><a href="">minbooking</a></li>
+                    </ul>
+                    <div class="footer-content-bottom d-flex align-items-center justify-content-between">
+                        <ul class="d-flex align-items-center justify-content-between">
+                            <li><a href="">privicy</a></li>
+                            <li><a href="">terms</a></li>
+                            <li><a href="">safely</a></li>
+                            <li><a href="">help</a></li>
+                        </ul>
+                        <div class="social d-flex align-items-center justify-content-between">
+                            <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a> 
+                            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+                            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
