@@ -18,6 +18,17 @@ $( function() {
             }
           }
         }
+      },
+      slide: function(event, ui) {
+        if (listSliderItem[0]) {
+          for (const item of listSliderItem) {
+            if (item.dataset.item == ui.value) {
+              item.classList.add('active');
+            } else {
+              item.classList.remove('active');
+            }
+          }
+        }
       }
     });
   });
