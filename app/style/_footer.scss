@@ -13,11 +13,8 @@ footer{
     @include text(13, bold, 'Nexa Heavy');
     text-transform: uppercase;
     border-bottom: solid 1px #4c4c4c;
-    & li:last-child{
+    a:hover, li:hover .fa{
       color: $turquoise;
-    }
-    a:hover{
-      color: rgb(224, 221, 221);
     }
     a.dropdown-toggle::after{
       display: none;

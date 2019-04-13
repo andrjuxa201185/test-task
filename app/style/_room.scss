@@ -4,6 +4,9 @@
       display: none;
       padding: 140px 0 100px;
       background-color: #95e7d1;
+      .img img{
+        width: 100%;
+      }
       .description{
         color: white;
         h3{
@@ -60,9 +63,13 @@
       } 
     }
     .slider-control-desc{
-      margin-top: 25px;
       div{
+        padding-top: 25px;
         font-family: 'Nexa Heavy', sans-serif;
+        cursor: pointer;
+        &:hover{
+          transform: scale(1.05);
+        }
         span{
           color: #242424;
           @include text(22, bold, 'Nexa Heavy');

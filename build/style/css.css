@@ -69,7 +69,7 @@ header {
   header nav {
     padding: 20px 0; }
     header nav a:hover {
-      transform: scale(1.1); }
+      transform: scale(1.05); }
     header nav ul li {
       margin: 0 17px; }
       header nav ul li a {
@@ -134,6 +134,10 @@ header {
             outline: none; }
           header .wrapper-header-center .header-center .search form .location-date .location {
             border-right: solid 1px #dadada; }
+          header .wrapper-header-center .header-center .search form .location-date .date .fa {
+            cursor: pointer; }
+            header .wrapper-header-center .header-center .search form .location-date .date .fa:hover {
+              color: #757575; }
         header .wrapper-header-center .header-center .search form .checkroom-sbt {
           margin-top: 10px; }
           header .wrapper-header-center .header-center .search form .checkroom-sbt .checkroom {
@@ -152,7 +156,8 @@ header {
                   opacity: 1; }
               header .wrapper-header-center .header-center .search form .checkroom-sbt .checkroom .radioBtn label {
                 font-size: 12px;
-                color: #8c8c8c; }
+                color: #8c8c8c;
+                cursor: pointer; }
                 header .wrapper-header-center .header-center .search form .checkroom-sbt .checkroom .radioBtn label b {
                   margin-right: 10px;
                   font-family: "Open Sans", sans-serif;
@@ -287,6 +292,8 @@ header {
   display: none;
   padding: 140px 0 100px;
   background-color: #95e7d1; }
+  .room .slider-inner .slider-inner-item .img img {
+    width: 100%; }
   .room .slider-inner .slider-inner-item .description {
     color: white; }
     .room .slider-inner .slider-inner-item .description h3 {
@@ -333,20 +340,22 @@ header {
       background-color: #1db1ae;
       outline: none;
       cursor: pointer; }
-  .room .slider-control .slider-control-desc {
-    margin-top: 25px; }
-    .room .slider-control .slider-control-desc div {
-      font-family: 'Nexa Heavy', sans-serif; }
-      .room .slider-control .slider-control-desc div span {
-        color: #242424;
-        font-family: "Nexa Heavy", sans-serif;
-        font-size: 22px;
-        font-weight: bold;
-        text-transform: uppercase; }
-      .room .slider-control .slider-control-desc div p {
-        margin-top: 5px;
-        font-size: 12px;
-        color: #8c8c8c; }
+  .room .slider-control .slider-control-desc div {
+    padding-top: 25px;
+    font-family: 'Nexa Heavy', sans-serif;
+    cursor: pointer; }
+    .room .slider-control .slider-control-desc div:hover {
+      transform: scale(1.05); }
+    .room .slider-control .slider-control-desc div span {
+      color: #242424;
+      font-family: "Nexa Heavy", sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .room .slider-control .slider-control-desc div p {
+      margin-top: 5px;
+      font-size: 12px;
+      color: #8c8c8c; }
 
 .testimonials #carousel {
   padding: 80px 0;
@@ -417,10 +426,8 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: solid 1px #4c4c4c; }
-    footer .footer-content-top li:last-child {
+    footer .footer-content-top a:hover, footer .footer-content-top li:hover .fa {
       color: #1db1ae; }
-    footer .footer-content-top a:hover {
-      color: #e0dddd; }
     footer .footer-content-top a.dropdown-toggle::after {
       display: none; }
     footer .footer-content-top .fa {

@@ -6,7 +6,7 @@ header {
     nav {
         padding: 20px 0;
         a:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
         ul li {
             margin: 0 17px;
@@ -80,6 +80,12 @@ header {
                    .location {
                        border-right: solid 1px #dadada;
                    }
+                   .date .fa{
+                    cursor: pointer;
+                    &:hover{
+                        color: #757575;
+                    }
+                   }
                }
                .checkroom-sbt {
                    margin-top: 10px;
@@ -102,6 +108,7 @@ header {
                            label {
                             font-size: 12px;
                             color: #8c8c8c;
+                            cursor: pointer;
                             b{
                                 margin-right: 10px;
                                 @include text(16, bold);

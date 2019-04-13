@@ -1,24 +1,4 @@
 $( function() {
-  $( "#datepicker" ).datepicker({
-    dateFormat: "d MM, yy",
-    showAnim: 'fold'
-  });
-
-  // get list of citys from data.json 
-  const citys = [];
-  $.get('../data/location.json')
-    .then(({ areas }) => {
-      for (const val of areas) {
-        for (const city of val.areas) {
-          citys.push(city.name);
-        }
-      }
-    });
-
-  $( "#location" ).autocomplete({
-    source: citys
-  });
-
   const listSliderItem = $('.slider-inner-item');
 
   $( function() {
@@ -28,7 +8,7 @@ $( function() {
       min: 1,
       max: 4,
       value: 1,
-      slide: function(event, ui) {
+      change: function(event, ui) {
         if (listSliderItem[0]) {
           for (const item of listSliderItem) {
             if (item.dataset.item == ui.value) {
@@ -40,5 +20,11 @@ $( function() {
         }
       }
     });
+  });
+
+  $('.slider-control-desc').click((e) => {
+    const item = e.target.closest('.slider-control-desc>div');
+    if (!item) return;
+    $("#slider-range-max").slider("value", item.dataset.range);
   });
 });
