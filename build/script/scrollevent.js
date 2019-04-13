@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
         if (blockOffset < windowHeight - 200 && blockOffset > 0) {
           block.classList.add('show');
         } else {
-          block.classList.remove('remove');
+          block.classList.remove('show');
         }
       }
     });
