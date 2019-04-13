@@ -1,3 +1,30 @@
+.no-scroll{
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    background-color: white;
+    transition: all .3s;
+    opacity: 1;
+    .wrapper-pre-img{
+        position: relative;
+        width: 100vh;
+        height: 100vh;
+        background-image: url('../images/preloaders.gif');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
 header {
     height: 100vh;
     background-image: url('../images/header-bg.png');

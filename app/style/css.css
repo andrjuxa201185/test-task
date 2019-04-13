@@ -61,6 +61,30 @@ a:hover {
 * html .ui-autocomplete {
   height: 200px; }
 
+.no-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; }
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  background-color: white;
+  transition: all .3s;
+  opacity: 1; }
+  #preloader .wrapper-pre-img {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    background-image: url("../images/preloaders.gif");
+    background-size: cover;
+    background-position: center; }
+
 header {
   height: 100vh;
   background-image: url("../images/header-bg.png");
@@ -286,7 +310,14 @@ header {
         text-transform: uppercase;
         color: white;
         background-color: #1db1ae;
-        border-radius: 20px; }
+        border-radius: 20px;
+        border: solid 1px #1db1ae;
+        transition: all .5s; }
+        .blocks .wrapper-block-item .block-item a:hover {
+          background-color: transparent;
+          color: #1db1ae; }
+    .blocks .wrapper-block-item:hover .block-item {
+      box-shadow: 0 0 5px 5px rgba(194, 193, 193, 0.452); }
 
 .room .slider-inner .slider-inner-item {
   display: none;

@@ -63,7 +63,16 @@
         color: white;
         background-color: $turquoise;
         border-radius: 20px;
+        border: solid 1px $turquoise;
+        transition: all .5s;
+        &:hover{
+          background-color: transparent;
+          color: $turquoise;
+        }
       }
+    }
+    &:hover .block-item{
+      box-shadow: 0 0 5px 5px rgba(194, 193, 193, 0.452);
     }
   }
   
