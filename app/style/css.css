@@ -127,7 +127,8 @@ header {
   header .wrapper-header-center {
     flex-grow: 1; }
     header .wrapper-header-center .header-center {
-      color: white; }
+      color: white;
+      font-family: 'Nexa Heavy',sans-serif; }
       header .wrapper-header-center .header-center h1 {
         font-family: "Nexa Heavy", sans-serif;
         font-size: 42px;
@@ -136,7 +137,10 @@ header {
         transform: scaleY(0.9); }
       header .wrapper-header-center .header-center p:first-of-type {
         margin-top: 35px;
-        font-size: 20px; }
+        font-size: 20px;
+        font-family: "Nexa Heavy", sans-serif;
+        font-size: 20px;
+        font-weight: inherit; }
       header .wrapper-header-center .header-center .wrapper-form {
         padding: 15px;
         margin-top: 60px;
@@ -234,6 +238,7 @@ header {
         padding: 15px 20px;
         text-transform: uppercase;
         color: white;
+        font-weight: bold;
         border: solid 2px white;
         border-radius: 2px;
         background-color: transparent;

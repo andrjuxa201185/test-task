@@ -71,6 +71,7 @@ header {
        flex-grow: 1;
        .header-center {
            color: white;
+           font-family: 'Nexa Heavy',sans-serif;
            h1 {
                @include text(42, bold, 'Nexa Heavy');
                text-transform: uppercase;
@@ -79,6 +80,7 @@ header {
            p:first-of-type {
                 margin-top: 35px;
                 font-size: 20px;
+                @include text(20, inherit, 'Nexa Heavy');
            }
            .wrapper-form {
                padding: 15px;
@@ -199,6 +201,7 @@ header {
                padding: 15px 20px;
                text-transform: uppercase;
                color: white;
+               font-weight: bold;
                border: solid 2px white;
                border-radius: 2px;
                background-color: transparent;
