@@ -23,8 +23,6 @@
         background-position: center;
     }
 }
-
-
 header {
     height: 100vh;
     background-image: url('../images/header-bg.png');
@@ -72,7 +70,6 @@ header {
     .wrapper-header-center {
        flex-grow: 1;
        .header-center {
-           height: 100%;
            color: white;
            h1 {
                @include text(42, bold, 'Nexa Heavy');
@@ -83,7 +80,7 @@ header {
                 margin-top: 35px;
                 font-size: 20px;
            }
-           .search {
+           .wrapper-form {
                padding: 15px;
                margin-top: 60px;
                background-color: rgba(38, 38, 38, 0.3);
@@ -94,20 +91,20 @@ header {
                     font-size: 20px;
                 }
                .location-date {
-                   width: 845px;
+                   flex-wrap: wrap;
                    border-radius: 3px;
                    background-color: white;
                    input {
-                        flex-grow: 1;
-                        min-width: 100px;
+                       flex-grow: 1;
                        padding: 15px 5px;
+                       min-width: 100px;
                        border: none;
                        outline: none;
                    }
                    .location {
                        border-right: solid 1px #dadada;
                    }
-                   .date .fa{
+                   & .fa{
                     cursor: pointer;
                     &:hover{
                         color: #757575;
@@ -117,15 +114,17 @@ header {
                .checkroom-sbt {
                    margin-top: 10px;
                    .checkroom {
-                       padding: 0 15px;
+                       padding: 0 0 0 15px;
                        flex-grow: 1;
                        border-radius: 3px;
                        background-color: white;
                        .radioBtn {
+                           margin-right: 20px;
                            padding: 15px 5px;
                            border: none;
                            outline: none;
                            color: $lightBlack;
+
                            input{
                                display: none;
                                &:checked + label span .fa{

@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
     document.addEventListener('scroll', () => {
       for (const block of blockItems) {
         blockOffset = block.getBoundingClientRect().top;
-        if (blockOffset < windowHeight - 200 && blockOffset > 0) {
+        if (blockOffset < windowHeight - 100 && blockOffset > 0) {
           block.classList.add('show');
         } else {
           block.classList.remove('show');

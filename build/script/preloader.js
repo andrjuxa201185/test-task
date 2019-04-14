@@ -4,11 +4,11 @@ window.addEventListener('load', () => {
     setTimeout(() => {
       preloader.style.opacity = 0;
       document.body.classList.remove('no-scroll');
-    },3000);
+    },2000);
     setTimeout(() => {
       preloader.style.opacity = 0;
       document.body.classList.remove('no-scroll');
       preloader.style.display = 'none';
-    },3500);
+    },2500);
   }
 });

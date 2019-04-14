@@ -13,4 +13,6 @@ $( function() {
   $( "#location" ).autocomplete({
     source: citys
   });
+
+  $('.location').click(() => $( "#location" ).focus());
 });
