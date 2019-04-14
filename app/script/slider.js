@@ -1,7 +1,6 @@
 $( function() {
   const listSliderItem = $('.slider-inner-item');
 
-  $( function() {
     $( "#slider-range-max" ).slider({
       animate: "slow",
       range: "max",
@@ -31,7 +30,6 @@ $( function() {
         }
       }
     });
-  });
 
   $('.slider-control-desc').click((e) => {
     const item = e.target.closest('.slider-control-desc>div');
