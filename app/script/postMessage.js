@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('test task ok');
   let data = { password: 'ok' };
 
   const frame = document.querySelector('iframe');
@@ -6,5 +7,5 @@ document.addEventListener('DOMContentLoaded', () => {
   frame.onload = () => {
     frame.contentWindow.postMessage(data, '*');
   }
-  console.log('bouncy ok');
+
 });
