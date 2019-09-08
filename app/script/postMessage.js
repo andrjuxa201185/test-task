@@ -7,5 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
   frame.onload = () => {
     frame.contentWindow.postMessage(data, '*');
   }
-
 });
+
+window.addEventListener("message", receiver, false);
+
+function receiver(e) {
+  console.log(e.data, '----------resp-----------!');
+}
