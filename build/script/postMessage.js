@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('test task ok');
   let data = { password: 'ok' };
 
   const frame = document.querySelector('iframe');
@@ -12,5 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener("message", receiver, false);
 
 function receiver(e) {
-  console.log(e.data, '----------resp-----------!');
+  console.log(e.data, e, '----------resp-----------!');
 }
